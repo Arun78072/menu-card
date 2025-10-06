@@ -1,95 +1,57 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className='page'>
+    <div className='image_section'>
+    <img src="menu_pages-to-jpg-0001.jpg" alt="Menu page 1" />
+        <img src="menu_pages-to-jpg-0002.jpg" alt="Menu page 2" />
+        <img src="menu_pages-to-jpg-0003.jpg" alt="Menu page 3" />
+        <img src="menu_pages-to-jpg-0004.jpg" alt="Menu page 4" />
+        <img src="menu_pages-to-jpg-0005.jpg" alt="Menu page 5" />
+    </div>
+      <div className='imageSection'>
+       
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+        {/* Location Section */}
+        <div className='locationSection'>
+          <h1>📍 Find Us on Google Maps</h1>
+          <p>
+            Visit <strong>Chauhan Sweets & Vaishno Dhaba</strong> for delicious food and
+            homely service. You can easily find us on Google Maps below.
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4088.6211960151386!2d76.21758727630005!3d31.996512773999598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b4708cba1284f%3A0xbf103206604f1a30!2sCHAUHAN%20SWEETS%20%2C%20FAST%20FOOD%2C%20VAISHNO%20DHABA%20and%20Guest%20house!5e1!3m2!1sen!2sin!4v1759771270301!5m2!1sen!2sin"
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        {/* Contact Section */}
+        <div className='contactSection'>
+          <h2>📞 Contact Us</h2>
+          <p>
+            <strong>Restaurant Name:</strong> Chauhan Sweets, Fast Food & Vaishno Dhaba
+          </p>
+          <p>
+            <strong>Address:</strong> NH-503, Near Bus Stand, Palampur, Himachal Pradesh
+          </p>
+          <p>
+            <strong>Phone:</strong> +91 98765 43210
+          </p>
+          <p>
+            <strong>Email:</strong> contact@chauhansweets.com
+          </p>
+          <p className='hours'>
+            Open daily from <strong>8:00 AM to 10:00 PM</strong>.  
+            Visit us or call to reserve your table!
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

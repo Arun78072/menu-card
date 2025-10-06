@@ -40,3 +40,94 @@ a {
     color-scheme: dark;
   }
 }
+
+
+
+.image_section img{
+    width:100%;
+}
+
+.page {
+  width: 100%;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.imageSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.imageSection img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Location Section */
+.locationSection {
+  margin-top: 50px;
+  text-align: center;
+  max-width: 900px;
+}
+
+.locationSection h1 {
+  color: #e63946;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.locationSection p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Contact Section */
+.contactSection {
+  margin-top: 50px;
+  background-color: #f8f8f8;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactSection h2 {
+  font-size: 1.8rem;
+  color: #1d3557;
+  margin-bottom: 15px;
+}
+
+.contactSection p {
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+.hours {
+  margin-top: 15px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .imageSection img {
+    max-width: 100%;
+  }
+
+  .locationSection h1 {
+    font-size: 1.6rem;
+  }
+
+  .contactSection {
+    padding: 20px;
+  }
+}
